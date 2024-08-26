@@ -63,7 +63,7 @@
                 <a href="{{ route('frontend.details', $article->slug) }}" class="card-news">
                     <div class="rounded-[20px] ring-1 ring-[#EEF0F7] p-[26px_20px] flex flex-col gap-4 hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300 bg-white">
                         <div class="thumbnail-container w-full h-[200px] rounded-[20px] flex shrink-0 overflow-hidden relative">
-                            <p class="badge-white absolute top-5 left-5 rounded-full p-[8px_18px] bg-white font-bold text-xs leading-[18px]">SPORT</p>
+                            <p class="badge-white absolute top-5 left-5 rounded-full p-[8px_18px] bg-white font-bold text-xs leading-[18px]">{{ $article->category->name}}</p>
                             <img src="{{ Storage::url ($article->thumbnail) }}" class="object-cover w-full h-full" alt="thumbnail" />
                         </div>
                         <div class="card-info flex flex-col gap-[6px]">
