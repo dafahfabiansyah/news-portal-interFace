@@ -135,7 +135,7 @@
 					<div class="card-detail w-full flex items-end p-[30px] relative z-20">
 						<div class="flex flex-col gap-[10px]">
 							<p class="text-white">Featured</p>
-							<a href="{{ route('frontend.details', $article->slug) }}" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$showFeaturedArticle->name}}</a>
+							<a href="{{ route('frontend.details', $showFeaturedArticle->slug) }}" class="font-bold text-[30px] leading-[36px] text-white hover:underline transition-all duration-300">{{$showFeaturedArticle->name}}</a>
 							<p class="text-white">{{ $showFeaturedArticle->created_at->format('d M Y') }}</p>
 						</div>
 					</div>
